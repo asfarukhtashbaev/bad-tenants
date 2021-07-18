@@ -57,7 +57,7 @@ var pluginList = [
     name: 'Emma Whotson',
     description: 'Идеальный дом не далеко от города, с бассейном и сауной. Все необходимые условия',
     link: '#',
-    image: '../img/person/1.png',
+    image: '../img/person/1.webp',
     link: 'profile.html',
     adress: 'Адрес: г. НьюЙорк, проспект бетховена'
   },
@@ -65,7 +65,7 @@ var pluginList = [
     name: 'AdminSync',
     description: 'Идеальный дом не далеко от города, с бассейном и сауной. Все необходимые условия',
     link: '#',
-    image: '../img/person/1.png',
+    image: '../img/person/1.webp',
     link: 'profile.html',
     adress: 'Адрес: г. НьюЙорк, проспект бетховена'
   },
