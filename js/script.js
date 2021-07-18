@@ -57,7 +57,7 @@ var pluginList = [
     name: 'Emma Whotson',
     description: 'Идеальный дом не далеко от города, с бассейном и сауной. Все необходимые условия',
     link: '#',
-    image: '../img/person/1.webp',
+    image: './img/person/1.png',
     link: 'profile.html',
     adress: 'Адрес: г. НьюЙорк, проспект бетховена'
   },
@@ -65,7 +65,7 @@ var pluginList = [
     name: 'AdminSync',
     description: 'Идеальный дом не далеко от города, с бассейном и сауной. Все необходимые условия',
     link: '#',
-    image: '../img/person/1.webp',
+    image: './img/person/1.png',
     link: 'profile.html',
     adress: 'Адрес: г. НьюЙорк, проспект бетховена'
   },
@@ -113,8 +113,14 @@ document.getElementById('search').addEventListener('input', function() {
       listItemTitle.setAttribute('href', value.link)
       var listItemText = document.createTextNode(value.name)
       listItemTitle.appendChild(listItemText)
-      let itemImage = document.createElement('img')
-      itemImage.setAttribute('src', value.image)
+      let itemImage = document.createElement('picture')
+      let imageSource = document.createElement('source')
+      imageSource.setAttribute('srcset', './img/header/Vector.webp')
+      imageSource.setAttribute('type', "text/webp")
+      let imageImg = document.createElement('img')
+      imageImg.setAttribute('src', value.image) 
+      itemImage.appendChild(imageSource)
+      itemImage.appendChild(imageImg)
       listItem.appendChild(itemImage)
       listItem.appendChild(listItemTitle)
       let adress = document.createElement('p')
